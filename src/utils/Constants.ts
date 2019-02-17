@@ -1,0 +1,17 @@
+export enum CREEP_ROLE {
+  HARVESTER = 'HARVESTER',
+  UPGRADER = 'UPGRADER',
+  CONSTRUCTOR = 'CONSTRUCTOR',
+  REPAIRER = 'REPAIRER',
+}
+
+export const CONST: {
+  MAX: { [K: string]: number };
+} = {
+  MAX: {
+    [CREEP_ROLE.HARVESTER]: 6,
+    [CREEP_ROLE.UPGRADER]: 1,
+    [CREEP_ROLE.CONSTRUCTOR]: 2,
+    [CREEP_ROLE.REPAIRER]: 1,
+  },
+};
